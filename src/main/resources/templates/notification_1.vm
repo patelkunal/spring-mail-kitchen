@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h3>Attention - GREETING !!</h3>
+
+        <div>
+            This is to notify you that automated system is greeting you.
+            <br/>
+            Below is the greeting details:<br/>
+            <ul>
+                <li><b>foo</b> : ${foo}</li>
+                <li><b>bar</b> : ${bar}</li>
+            </ul>
+
+			<br/><br/>
+			Thanks,<br/>
+			Kitchen Automated Notification System
+        </div>
+    </body>
+</html>

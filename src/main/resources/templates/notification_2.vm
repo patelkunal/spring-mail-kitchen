@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <h3>Attention - GREETINGS !!</h3>
+
+        <div>
+            This is to notify you that automated system is greeting you.
+            <br/>
+            Below is the greeting details:<br/>
+            <ul>
+            #if( $foo_boolean )
+                <li><b>message</b> : FOO Greetings !!</li>
+                <li><b>foo_key</b> : ${foo}</li>
+            #elseif( $bar_boolean )
+                <li><b>message</b> : BAR Greetings !!</li>
+                <li><b>bar_key</b> : ${bar}</li>
+            #else
+                <li><b>message</b> : Default Greetings !!</li>
+            #end
+            </ul>
+
+
+			<br/><br/>
+			Thanks,<br/>
+			Kitchen Automated Notification System
+        </div>
+    </body>
+</html>

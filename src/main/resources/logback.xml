@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{ISO8601} %green(%5level) %magenta([%12.12t]) %boldCyan(%-50.50logger{39}) : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="org.eclipse.jetty" level="WARN"/>
+    <logger name="javax.management" level="WARN"/>
+    <logger name="org.apache.velocity" level="WARN"/>
+
+</configuration>
